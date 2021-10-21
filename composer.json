@@ -1,0 +1,32 @@
+{
+    "name": "bigmom/time-period",
+    "description": "Create \\Carbon\\CarbonPeriod instances with default database with cache resolver or create a custom resolver.",
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8.0",
+        "nesbot/carbon": "^2.31"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Bigmom\\TimePeriod\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bigmom\\TimePeriod\\TimePeriodServiceProvider"
+            ],
+            "aliases": {
+                "TimePeriod": "Bigmom\\TimePeriod\\Facades\\TimePeriod"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Isaac Mok Kai Xiang",
+            "email": "isaac.mok.kx@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
